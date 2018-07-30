@@ -1,0 +1,26 @@
+{
+  "name": "ohmydocs",
+  "version": "1.0.0",
+  "description": "我的文档",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "sh build/deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xieyankun/ohmydocs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xieyankun/ohmydocs/issues"
+  },
+  "homepage": "https://github.com/xieyankun/ohmydocs#readme",
+  "dependencies": {
+    "vuepress": "^0.13.0"
+  }
+}
