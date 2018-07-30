@@ -16,6 +16,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/logo.jpg' }]
   ],
   themeConfig: {
+    repo: 'xieyankun/ohmydocs',
     editLinks: true,
     docsDir: 'docs',
     locales: {
