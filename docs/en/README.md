@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /logo.jpg
-actionText: 开启旅程 →
-actionLink: /guide/
+actionText: Get Started →
+actionLink: /en/guide/
 # features:
 # - title: 深入源码
 #   details: 源码阅读是修炼内功的过程，在这里我们会深入到代码每一行代码，力求对整个框架做到全面而细致的分析。
