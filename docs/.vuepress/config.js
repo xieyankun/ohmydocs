@@ -6,11 +6,11 @@ module.exports = {
       title: '知识库',
       description: '大道无形，不止于行'
     },
-    '/en/': {
-      lang: 'en-US',
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator'
-    }
+    // '/en/': {
+    //   lang: 'en-US',
+    //   title: 'VuePress',
+    //   description: 'Vue-powered Static Site Generator'
+    // }
   },
   head: [
     ['link', { rel: 'icon', href: '/logo.jpg' }]
@@ -34,11 +34,13 @@ module.exports = {
         nav: [
           { text: '前端', link: '/guide/' },
           { text: '算法', link: '/algorithm/' },
+          { text: '面试', link: '/interview/' },
           { text: '工具', link: '/tool/' }
         ],
         sidebar: {
           '/guide/': genSidebarGuideConfig('指南'),
           '/algorithm/': genSidebarAlgorithmConfig('指南'),
+          '/interview/': genSidebarInterviewConfig('指南'),
           '/tool/': genSidebarToolConfig('指南'),
         }
       }
@@ -73,21 +75,39 @@ function genSidebarGuideConfig (title) {
     }
   ]
 }
-// Tool 目录结构
-function genSidebarToolConfig (title) {
+
+// algorithm 目录结构
+function genSidebarAlgorithmConfig (title) {
   return [
     {
       title,
       collapsable: false,
       children: [
         '',
+        '排序',
+        '斐波那契数列'
       ]
     }
   ]
 }
 
-// algorithm 目录结构
-function genSidebarAlgorithmConfig (title) {
+// Interview 目录结构
+function genSidebarInterviewConfig (title) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        '',
+        'ES6',
+      ]
+    }
+  ]
+}
+
+
+// Tool 目录结构
+function genSidebarToolConfig (title) {
   return [
     {
       title,
