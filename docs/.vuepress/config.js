@@ -34,12 +34,14 @@ module.exports = {
         nav: [
           { text: '前端', link: '/guide/' },
           { text: '算法', link: '/algorithm/' },
+          { text: 'React', link: '/react/' },
           { text: '面试', link: '/interview/' },
           { text: '工具', link: '/tool/' }
         ],
         sidebar: {
           '/guide/': genSidebarGuideConfig('指南'),
           '/algorithm/': genSidebarAlgorithmConfig('指南'),
+          '/react/': genSidebarReactConfig('指南'),
           '/interview/': genSidebarInterviewConfig('指南'),
           '/tool/': genSidebarToolConfig('指南'),
         }
@@ -86,6 +88,20 @@ function genSidebarAlgorithmConfig (title) {
         '',
         '排序',
         '斐波那契数列'
+      ]
+    }
+  ]
+}
+
+// react 目录结构
+function genSidebarReactConfig (title) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        '',
+        'setState'
       ]
     }
   ]
