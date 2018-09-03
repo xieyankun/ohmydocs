@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/xieyankun/ohmydocs#readme",
   "dependencies": {
+    "lodash": "^4.17.10",
     "vuepress": "^0.13.0"
   }
 }

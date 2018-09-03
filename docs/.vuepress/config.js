@@ -116,6 +116,7 @@ function genSidebarInterviewConfig (title) {
       children: [
         '',
         'ES6',
+        'CSS',
       ]
     }
   ]
